@@ -1,0 +1,33 @@
+﻿<Window x:Class="Жалюзи.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Жалюзи"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="812">
+    <Grid>
+        <Menu Margin="0,0,0,511">
+            <Button Content="ListBox" Height="45" Width="89" FontFamily="Tahoma" FontSize="20" Click="Button_Click"/>
+            <Button Content="ComboBox" Height="48" Width="88" FontFamily="Tahoma" FontSize="20" Click="Button_Click_1"/>
+        </Menu>
+        <Label Content="Высота (см)" HorizontalAlignment="Left" Margin="28,114,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="24"/>
+        <Label Content="Ширина (см)" HorizontalAlignment="Left" Margin="28,178,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="24"/>
+        <Label Content="Материал" HorizontalAlignment="Left" Margin="525,114,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="24"/>
+        <ComboBox x:Name="cb" HorizontalAlignment="Left" Margin="534,162,0,0" VerticalAlignment="Top" Width="120" Visibility="Visible"/>
+        <ListBox x:Name="lb" Margin="534,158,127,309">
+            <ListBoxItem Content="Пластик"/>
+            <ListBoxItem Content="Алюминий"/>
+        </ListBox>
+        <Button x:Name="btnVvod" Content="Рассчитать" HorizontalAlignment="Left" Margin="174,261,0,0" VerticalAlignment="Top" Height="42" Width="186" FontFamily="Tahoma" FontSize="24" Click="btnVvod_Click"/>
+        <Label Content="Размер" HorizontalAlignment="Left" Margin="28,384,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="24"/>
+        <Label Content="Цена (р. за кв.м)" HorizontalAlignment="Left" Margin="28,444,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="24"/>
+        <Label Content="Стоимость" HorizontalAlignment="Left" Margin="28,508,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="24"/>
+        <Label x:Name="lblpr" Content="" HorizontalAlignment="Left" Margin="230,444,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="24"/>
+        <TextBox x:Name="txtV" HorizontalAlignment="Left" Margin="207,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Tahoma" FontSize="24"/>
+        <TextBox x:Name="txtCh" HorizontalAlignment="Left" Margin="207,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Tahoma" FontSize="24"/>
+        <Label x:Name="lblRazmer" Content="" HorizontalAlignment="Left" Margin="134,384,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="24" BorderBrush="Black" Foreground="#FF939393"/>
+        <Label x:Name="lblSt" Content="" HorizontalAlignment="Left" Margin="158,510,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="24" BorderBrush="Black" Foreground="Black"/>
+
+    </Grid>
+</Window>
